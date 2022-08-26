@@ -73,6 +73,6 @@ jobs:
         script: |
           # Выполняет pull образа с DockerHub
           sudo docker pull sparkanton/infra_actions
-          #остановка всех контейнеров
+          #остановка всех контейнеро
           sudo docker stop $(sudo docker ps -a -q)
           sudo docker run --rm -d -p 5000:5000 sparkanton/infra_actions
